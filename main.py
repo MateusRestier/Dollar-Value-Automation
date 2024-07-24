@@ -1,7 +1,7 @@
 try:
     import requests
     from bs4 import BeautifulSoup
-    from selenium import webdriver
+    
     print("Bibliotecas importadas com sucesso.")
 except ImportError as e:
     print(f"Erro de importação: {e}. Por favor, instale a biblioteca necessária usando pip.")
