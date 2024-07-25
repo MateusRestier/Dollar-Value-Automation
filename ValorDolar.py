@@ -33,11 +33,14 @@ def pegando_dolar_by_request():
             parte2 = elemento.find('input').get('value')
 
         if parte1 and parte2:
-            valor_dolar = f'OOOOOOO valor do Dolár Hoje é igual a: {parte1}{parte2}'
+            valor_dolar = f'O valor do Dolár Hoje é igual a: {parte1}{parte2}'
             print(valor_dolar)
     except Exception as e:
         print(f"Ocorreu um erro: {e}")
 
-
+# Chama a função para pegar o valor do dólar
 pegando_dolar_by_request()
+
+# Adiciona uma pausa para evitar que o programa feche imediatamente
+input("Pressione Enter para sair...")
 
